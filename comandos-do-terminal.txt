@@ -1,0 +1,31 @@
+/*Comandos do terminal
+
+/       //DIRETORIO RAIZ
+ls      //LISTA ARQUIVOS E DIRETORIOS '* mostra todos os arquivos de todos os diretorios' '? caso não lembre algum caractere do diretorio'
+ls -a   //LISTA TAMBEM ARQUIVOS E DIRETORIOS OCULTOS
+cd      //MUDAR DIRETORIO
+mkdir   //CRIAR DIRETORIO
+cd .    //REFERENCIA O PROPRIO DIRETORIO
+cd ..   //REFERENCIA O DIRETORIO PAI
+pwd     //MOSTRA O CAMINHO COMPLETO DO DIRETORIO
+touch   //CRIAR ARQUIVOS
+cp      //CRIA COPIA DE UM ARQUIVO
+cat     //MOSTRAR CONTEUDO DO ARQUIVO
+mv      //MOVER ARQUIVOS
+rm      //REMOVER ARQUIVOS
+rmdir   //REMOVER DIRETORIOS
+rm -rf  //APAGAR DIRETORIO E SUBDIRETORIOS 'r' para remove 'f' para sem confirmações
+less    //MOSTRA O ARQUIVO DIVIDIDO EM PAGINAS 'apertar space muda a pagina' 'q' finaliza a exibição (/algumacoisa MOSTRA LINHAS COM algumacoisa)
+head    //MOSTRA AS 10 PRIMEIRAS LINHAS, '-5' DEFINE QUANTAS LINHAS SERÃO MOSTRADAS
+tail    //MOSTRA AS 10 ULTIMAS LINHAS, MESMA REGRA DE head
+grep    //BUSCA DENTRO DO ARQUIVO NUM ARQUIVO ESPECIFICO '-i procura sem case sensitive' 'procurar com '' para procurar frases' '-v mostra o contrario' '-n busca uma unica vez'-c numero de vezes que a busca se repete'
+wc      //MOSTRA A QUANTIDADE DE LINHAS, PALAVRAS E CARACTERES DE UM ARQUIVO
+sort    //ORDENA AS LINHAS DENTRO DO ARQUIVO '| no final para criar novo arquivo com as linhas ordenadas' '-n ordenar numeros de maneira crescente'
+man     //ACESSA O MANUAL DE UM COMANDO
+whatis  //EXPLICAÇÃO PARA UM COMANDO
+apropos //BUSCA COMANDO RELACIONADOS AO TEMA
+find    //BUSCAR ARQUIVOS OU DIRETORIOS '-name -type d ou f
+history //HISTORICO DO TERMINAL
+echo    //EXIBIR MENSAGEM NA TELA DO TERMINAL
+
+*/

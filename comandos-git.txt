@@ -1,0 +1,30 @@
+/* COMANDOS GIT
+
+git init                //TORNAR O DIRETORIO UM REPOSITORIO GIT
+git branch -m           //MUDA O NOME DA BRANCH
+git status              //MOSTRA ALGUMAS INFORMAÇÕES DO GIT E ALTERAÇÕES QUE FORAM REALIZADAS
+git config user.name    //DEFINE O USUARIO DO GIT
+git config user.email   //DEFINE O EMAIL DO USUARIO
+git config --list       //MOSTRA AS INFORMAÇÕES DE CREDENCIAIS ALÉM DE OUTRAS COISAS
+README.md               //CRIAR ARQUIVO DE MARCAÇÃO DE TEXTO
+code .                  //ABRIR VSCODE
+git add                 //USADO PARA ADICIONAR MUDANÇAS AS BRANCHS
+git add .               //adicionam as modificações em staging e informam ao Git que as modificações realizadas vão estar no próximo commit
+git commit -md          //REGISTRA AS MUDANÇAS, INFORMA O QUE FOI ALTERADO COM UMA STRING E CRIA UMA VERSÃO DO PROJETO
+git log                 //MOSTRA HISTORICOD E COMMIT
+git checkout -b         //CRIA UMA NOVA BRANCH TROCANDO PRA ELA COLOCA O NOME COM UMA STRING 'git checkout <nome-da-branch>' MUDA PARA DETERMINADA BRANCH
+git branch              //VERIFICA QUAL A BRANCH ATUAL '-D <nome> deleta a branch'
+git merge               //DEPOISD E DAR STAGE, COMMIT NAS MODIFICAÇÕES, COLOCA AS ALTERAÇÕES NA BRANCH MAIN
+git amend               //CORRIGE O ULTIMO COMMIT 'git commit --amend'
+git rebase              //EDITA MENSAGEM DO COMMIT, COMBINA, EDITA OU EXCLUI COMMITS
+git remove              //CASO QUERIA REVERTER ALGUM COMMIT, BASTA PROCURAR NO LOG O COMMIT DESEJA DE USAR O COMANDO 'git checkout <hash> do commit'
+git ignore              //CRIAR UMA PASTA '.gitignore' PRA DEFINIR ARQUIVOS OU DIRETORIOS '*.txt' QUE SERÃO IGNORADOS NO STAGE | USAR O TOPTAL PRA GERAR UM .gitignore PRONTO
+git remote add origin   //VINCULA O REPOSITORIO LOCAL AO GITHUB COM O LINK SSH NO FINAL
+git push -u origin main //ENVIA OS COMMITS PARA O REPOSITORIO REMOTO VINCULANDO LOCAL E REMOTO 'main pode ser trocado por outra branch basta definir o nome da branch no lugar de main'
+git push                //ENVIA AS ALTERAÇÕES DO REPOSITORIO LOCAL PARA O REMOTO
+git clone SSH           //CLONA O DIRETORIO DO GITHUB EM UM REPOSITORIO LOCAL
+git fetch               //VERIFICA SE EXISTE MODIFICAÇÕES ENTRE O REPOSITORIO REMOTO E O LOCAL
+git pull                //VERIFICA COMO O fetch MAS REALIZA UM merge ENTRE OS DIRETORIOS
+
+
+
