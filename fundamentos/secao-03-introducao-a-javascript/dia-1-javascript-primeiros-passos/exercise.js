@@ -96,4 +96,36 @@ console.log(grade);
 
 //
 
-let 
+let par;
+
+if (a % 2 == 0 || b % 2 == 0 || c % 2 == 0) {
+    par = true;
+} else {
+    par = false;
+}
+console.log(par);
+
+//
+
+let impar;
+
+if (a % 2 != 0 || b % 2 != 0 || c % 2 != 0) {
+    impar = true;
+} else {
+    impar = false;
+}
+console.log(impar);
+
+//
+
+let sellPrice = 12;
+let costPrice = 7;
+let profit;
+
+if (sellPrice > costPrice) {
+    profit = sellPrice - costPrice * 1.2;
+} else {
+    console.log('Not good business!');
+}
+let productionProfit =  profit * 1000;
+console.log(productionProfit);
