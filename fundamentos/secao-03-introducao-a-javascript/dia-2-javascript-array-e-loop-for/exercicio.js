@@ -45,3 +45,12 @@ console.log(newNumbers);
 for (let index = 0; index < newNumbers.length; index += 1) {
   console.log(newNumbers[index] / 2)
 }
+
+let number = 4;
+let fatorial = number;
+
+for (let index = number-1; index > 1; index -= 1) {
+  fatorial = fatorial * (index)
+}
+
+console.log(fatorial);
