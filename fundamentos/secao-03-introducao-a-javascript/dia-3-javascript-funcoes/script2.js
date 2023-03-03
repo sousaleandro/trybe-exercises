@@ -1,33 +1,38 @@
 let clientesTrybeBank = ['Ada', 'John', 'Gus'];
 
-let tipoVerificado = false;
-
-function verificaTypeof(cliente) {
-  if (typeof cliente === 'string') {
-    tipoVerificado = true;
-  } return tipoVerificado
+function validaCliente(cliente) {
+  if (typeof cliente !== 'string') {
+    return 'O parâmetro passado deve ser do tipo "string"!';
+  } else {
+    return true;
+  }
 }
 
-/* console.log(verificaTypeof('Gus'));
-console.log(verificaTypeof(199));
-console.log(verificaTypeof('Joel')); */
-
-let clienteVerificado = false;
-
-function verificaCliente(cliente) {
+function clienteIndex(cliente) {
   for (let index = 0; index < clientesTrybeBank.length; index += 1) {
     if (cliente === clientesTrybeBank[index]) {
-      return true
+      return index;
     }
-  } return 'Cliente não encontrado!'
+  }
+  return false;
 }
 
-/* console.log(verificaCliente(199));
-console.log(verificaCliente('Joel'));
-console.log(verificaCliente('Gus')); */
+function removeCliente(cliente) {
+  let validacao = validaCliente(cliente);
+  if (validacao !== true) {
+    return validacao;
+  }
 
-//CRIAR FUNÇÃO REMOVER CLIENTE
+  let index = clienteIndex(cliente);
+  if (index === false) {
+    return 'Cliente não encontrada(o).'
+  }
 
-console.log(removeCliente('Gus'));
-console.log(removeCliente(199));
-console.log(removeCliente('Joel'));
+  clientesTrybeBank.splice(index, 1);
+  return 'Cliente excluída(o) com sucesso.';
+}
+
+console.log(removeCliente(199)); 
+console.log(removeCliente('Barney')); 
+console.log(removeCliente('Gus')); 
+console.log(clientesTrybeBank); 
