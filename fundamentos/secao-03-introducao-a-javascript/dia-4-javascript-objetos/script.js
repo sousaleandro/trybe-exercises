@@ -1,22 +1,32 @@
-let customer1 = {
-  firstName: 'Roberto',
-  age: 22,
-  job: 'Teacher',
-};
+// let info = {
+//   personagem: 'Margarida',
+//   origem: 'Pato Donald',
+//   nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
+// };
 
-let customer2 = {
-  firstName: 'Maria',
-  age: 23,
-  job: 'Medic',
-};
+// info['recorrente'] = 'sim';
 
-customer1.gender = 'male'
-customer2.gender = 'female'
+// for (let value in info) {
+//   console.log(info[value]);
+// }
 
-customer1['socialNumber'] = 45608
-customer2['socialNumber'] = 44862
+// let infoPatinhas = {};
 
+// function addProperty(key, value) {
+//   return infoPatinhas[key] = value;
+//   }
+  
 
+// addProperty('personagem', 'Tio Patinhas');
+// addProperty('origem', 'Christmas on Bear Mountain, Dell’s Four Color Comics #178');
+// addProperty('nota', 'O último MacPatinhas');
+// addProperty('recorrente', 'Sim');
 
-console.log(customer1);
-console.log(customer2);
+// for (let key in info) {
+//   if (key === 'recorrente' && info[key] === 'sim' && infoPatinhas[key]) {
+//     console.log('Ambos recorrentes'); 
+//   } else {
+//     console.log(info[key] + ' e ' + infoPatinhas[key]);
+//   }
+// }
+
