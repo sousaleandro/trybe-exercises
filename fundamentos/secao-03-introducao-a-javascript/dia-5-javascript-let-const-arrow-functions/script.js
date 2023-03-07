@@ -1,2 +1,2 @@
-const multiplication = (number, multi) => number * multi;
-console.log(multiplication(8, 2));
+const str = 'The quick brown fox jumps over the lazy dog.';
+console.log(str.split(' '));
