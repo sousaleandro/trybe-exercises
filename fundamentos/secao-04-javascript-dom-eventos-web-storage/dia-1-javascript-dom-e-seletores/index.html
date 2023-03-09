@@ -10,29 +10,28 @@
     <script>
 
       const paragraph = document.getElementById("paragraph");
+      const getTitle = document.getElementById('page-title');
+      const getSubtitle = document.getElementsByTagName('h4');
+      const secondParagraph = document.getElementById('second-paragraph');
+      const getParagraphs = document.getElementsByClassName('paragraphs');  
+
       paragraph.style.color = "red";
       paragraph.innerHTML = 'Best Movie In The World Bahia';
       paragraph.style.fontFamily = 'suns-serif';
-
-      const getTitle = document.getElementById('page-title');
+      secondParagraph.style.color = 'blue';
       getTitle.innerHTML = 'Avengers: Endgame';
-
-      const getSubtitle = document.getElementById('subtitle');
-      getSubtitle.innerHTML = 'New beginning';
-
-      const secondParagraph = document.getElementById('second-paragraph');
+      getSubtitle[0].innerHTML = 'New beginning';
+      getSubtitle[0].style.color = 'purple';
 
       const giveClassName = (elementName, elementClass) => {
         elementName.className = elementClass;
       };
 
-      // giveClassName();
       giveClassName(paragraph, 'paragraphs');
       giveClassName(secondParagraph, 'paragraphs');
 
-      const getParagraphs = document.getElementsByClassName('paragraphs');
 
-      console.log(getParagraphs);
+      console.log(allSubtitle);
 
     </script>
   </body>
