@@ -1,5 +1,10 @@
-// arquivo script.js
+const getBody = document.getElementsByTagName('body');
 
-console.log(document.getElementById('start').nextSibling) // nó
+function tagCreator() {
+  const getTag = document.createElement('h1');
+  getTag.innerHTML = 'TrybeTrip - Agência de Viagens';
+  getBody.appendChild(getTag);
+};
 
-console.log(document.getElementById('start').nextElementSibling) // <p>elemento</p>
+tagCreator();
+console.log(document.getElementsByTagName('h1'.innerHTML));
