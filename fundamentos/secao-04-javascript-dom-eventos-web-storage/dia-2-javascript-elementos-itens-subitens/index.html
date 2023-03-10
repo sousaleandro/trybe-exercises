@@ -30,11 +30,19 @@
     const attention = me.nextSibling;
     const youngBrother = me.nextElementSibling;
     const youngSon = meFather.lastElementChild.previousElementSibling;
+
+    const newFamilyMember = () => {
+      const newSon = document.createElement('section');
+      newSon.innerHTML = 'teste';
+      meFather.appendChild(newSon);
+    };
     
     
-   
+    newFamilyMember();
+
     meFather.style.color = 'blue';
     meSon.innerHTML = 'My son';
+    
   
     console.log(me);
     console.log(meFather);
@@ -44,6 +52,7 @@
     console.log(attention);
     console.log(youngBrother);
     console.log(youngSon);
+    console.log(meFather.lastElementChild.);
     
   </script>
 </body>
