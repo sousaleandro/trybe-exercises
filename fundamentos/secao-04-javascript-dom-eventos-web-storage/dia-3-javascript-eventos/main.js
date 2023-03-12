@@ -37,23 +37,20 @@ input.addEventListener('input', (event) => {
 // redirecione para alguma página;
 //  - Que tal redirecionar para seu portfólio?
 
-
+myWebpage.addEventListener('dblclick', (event) => {
+  window.location.replace('https://github.com/sousaleandro');
+})
 
 // - Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
 
-// Segue abaixo um exemplo do uso de event.target:
+myWebpage.addEventListener('mouseover', vaidisgraca);
+myWebpage.addEventListener('mouseleave', changeColor);
 
+function vaidisgraca() {
+  myWebpage.style.color = 'blue';
+};
 
-const resetText = (event) => {
-  // O Event é passado como um parâmetro para a função.
-  event.target.innerText = 'Opção reiniciada';
-  // O event possui várias propriedades, porém a mais usada é o event.target,
-  // que retorna o objeto que disparou o evento.
+function changeColor() {
+  myWebpage.style.color = 'unset';
 }
-
-firstLi.addEventListener('dblclick', resetText);
-
-// Não precisa passar o parâmetro dentro da callback resetText. O próprio
-// navegador fará esse trabalho por você, não é legal? Desse jeito, o
-// event.target na nossa função retornará o objeto 'firstLi'.
