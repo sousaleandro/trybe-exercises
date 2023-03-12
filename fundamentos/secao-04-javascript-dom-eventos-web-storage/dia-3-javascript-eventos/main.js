@@ -15,7 +15,6 @@ const uList = document.querySelectorAll('.container li');
 
 // firstLi.addEventListener('click', addClass);
 
-
 for (let index = 0; index < uList.length; index += 1) {
   uList[index].addEventListener('click', (event) => {
     const techLi = document.querySelector('.tech');
@@ -26,12 +25,19 @@ for (let index = 0; index < uList.length; index += 1) {
   })
 };
 
-// - Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
-// com a classe 'tech';
+// - Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento com a classe 'tech';
+input.placeholder = 'Digite tecnologias aqui!';
+
+input.addEventListener('input', (event) => {
+  const getTechElement = document.querySelector('.tech');
+  getTechElement.innerText = event.target.value;
+});
 
 // - Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 // redirecione para alguma página;
 //  - Que tal redirecionar para seu portfólio?
+
+
 
 // - Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
