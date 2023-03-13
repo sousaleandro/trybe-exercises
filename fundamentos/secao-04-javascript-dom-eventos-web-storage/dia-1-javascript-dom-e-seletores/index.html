@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h2 id="page-title">Título</h2>
+      <p id="paragraph">Dê uma cor para este parágrafo!</p>
+      <h4 id="subtitle">Subtítulo</h4>
+      <p id="second-paragraph">Segundo parágrafo!</p>
+    </header>
+    <script>
+
+      const paragraph = document.getElementById("paragraph");
+      const getTitle = document.getElementById('page-title');
+      const getSubtitle = document.getElementsByTagName('h4');
+      const secondParagraph = document.getElementById('second-paragraph');
+      const getParagraphs = document.getElementsByClassName('paragraphs');  
+
+      paragraph.style.color = "red";
+      paragraph.innerHTML = 'Best Movie In The World Bahia';
+      paragraph.style.fontFamily = 'suns-serif';
+      secondParagraph.style.color = 'blue';
+      getTitle.innerHTML = 'Avengers: Endgame';
+      getSubtitle[0].innerHTML = 'New beginning';
+      getSubtitle[0].style.color = 'purple';
+
+      const giveClassName = (elementName, elementClass) => {
+        elementName.className = elementClass;
+      };
+
+      giveClassName(paragraph, 'paragraphs');
+      giveClassName(secondParagraph, 'paragraphs');
+
+
+      console.log(allSubtitle);
+
+    </script>
+  </body>
+</html>
