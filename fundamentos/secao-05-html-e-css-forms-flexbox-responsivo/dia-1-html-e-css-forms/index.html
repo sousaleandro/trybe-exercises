@@ -25,12 +25,59 @@
       </label>
       <br>
       <br>
+      <label for="">Escolha o seu país:
+        <select name="country" id="country-input">
+          <option value="br" checked>Brasil</option>
+          <option value="us">USA</option>
+          <option value="ar">Argentina</option>
+          <option value="fr">França</option>
+          <option value="es">Espanha</option>
+        </select>
+      </label>
+      <br>
+      <p> Escolha sua foto.</p>
+        <input type="file" name="avatar" id="avatar-input">
+      </label>
+      <br>
+      <p>Você possui carro?</p>
+      <label for="car-no">
+        <input type="radio" name="car" id="car-no" value="no" checked>Não
+      </label>
+      <label for="car-yes">
+        <input type="radio" name="car" id="car-yes" value="yes">Sim
+      </label>
+      <br>
+
+      <p>Comente algo sobre o formulário</p>
+      <textarea name="comments" id="comments-input" cols="30" rows="3"></textarea>
+      <br>
+      <br>
       <label for="remember-input">Lembre-me
         <input type="checkbox" name="remember" id="remember-input">
       </label>
       <br>
       <br>
-      <button type="submit">Acessar Conta</button>
+      <label for="color-input">
+        <input type="color" name="color" id="color-input">
+      </label>
+      <label for="">
+        <input type="datetime-local" name="" id="">
+      </label>
+      <label for="">
+        <input type="number" name="" id="" min="0" value="0" max="5">
+      </label>
+      <label for="">
+        <input type="month" name="" id="">
+      </label>
+      <label for="">
+        <input type="range" name="" id="" min="1" max="10">
+      </label>
+      <label for="">
+        <input type="tel" name="" id="" minlength="10" maxlength="11">
+      </label>
+      <br>
+      <br>
+      <button type="submit">Cadastrar Informações</button>
     </form>
   </main>
 </body>
