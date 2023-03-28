@@ -113,10 +113,10 @@ const findPersonByName = (name) => {
     checkPersonName(name);
     clients.forEach((clients) => {
       if (name === clients.name)
-        return console.log(`Destinatário: ${clients.name}. Endereço: ${clients.address.street}, ${clients.address.number}, ${clients.address.neighborhood}, ${clients.address.city} - ${clients.address.state}. CEP: ${clients.address.cep}`);
+        return `Destinatário: ${clients.name}. Endereço: ${clients.address.street}, ${clients.address.number}, ${clients.address.neighborhood}, ${clients.address.city} - ${clients.address.state}. CEP: ${clients.address.cep}`;
     })
   } catch (erro) {
-    return console.log(erro.message);
+    return erro.message;
   }
 };
 
@@ -129,9 +129,9 @@ const checkPersonPosition = (position) => {
 const findPersonByPosition = (position) => {
   try {
     checkPersonPosition(position);
-    return console.log(`Cliente: ${clients[position].name}. email: ${clients[position].email}`)
+    return `Cliente: ${clients[position].name}. email: ${clients[position].email}`;
   } catch (erro) {
-    return console.log(erro.message);
+    return erro.message;
   }
 };
 
@@ -156,11 +156,8 @@ const findPeopleByState = (state) => {
         people.push(clients.name)
       }
     })
-    return console.log(people);
+    return people;
   } catch (erro) {
-    return console.log(erro.message);
+    return erro.message;
   }
 };
-
-findPeopleByState('SP');
-findPeopleByState('AM');
