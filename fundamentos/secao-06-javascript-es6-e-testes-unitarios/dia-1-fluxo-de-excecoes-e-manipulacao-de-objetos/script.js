@@ -24,17 +24,11 @@ button.addEventListener('click', () => {
 const showPromo = (name, number) => {
   const firstText = document.querySelector('#text-initial');
   const secondText = document.querySelector('#text-final');
-  const checkName = (name) => {
-    let letters = /[aA-zZ]+/;
-    
-    if (!name.match(letters)) {
-      throw new Error('É necessário digitar um nome válido');
-    }
-  }
-
+  
   try {
     checkName(name);
     checkNumber(parseInt(number));
+    checkValidRange(number);
     const productObject = checkPromo(number);
 
     firstText.innerHTML = `Boas-vindas, ${name}!`;
@@ -42,6 +36,9 @@ const showPromo = (name, number) => {
       ${productObject.product} no valor de R$ ${productObject.price}`;
   } catch(err) {
     secondText.innerHTML = err.message;
+  } finally {
+  document.querySelector('#name-id').value = "";
+  document.querySelector('#number-id').value = "";
   }
 }
 
@@ -58,5 +55,21 @@ const checkPromo = (number) => {
     if (number - 1 === index) {
       return promo[index];
     }
+  }
+}
+
+// Exercicio
+const checkValidRange = (number) => {
+  if (number < 1 || number > 10) {
+    throw new Error('O número deve ser de 1 á 10!')
+  }
+}
+
+// Quarta parte
+const checkName = (name) => {
+  let letters = /[aA-zZ]+/;
+  
+  if (!name.match(letters)) {
+    throw new Error('É necessário digitar um nome válido');
   }
 }
