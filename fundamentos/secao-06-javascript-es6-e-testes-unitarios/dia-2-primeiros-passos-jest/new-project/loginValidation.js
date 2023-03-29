@@ -1,22 +1,18 @@
 // loginValidation.js
-const greetingMessage = (user) => {
-  return `Hello, ${user}! Que bom ter você de volta`;
-};
-const loginErrorMessage = (user) => {
-  return `Pessoa usuária ${user} não encontrada, tente novamente!`;
-};
-// trazemos aqui esse objeto somente para demonstrar como funciona a função verifyCredentials, mas poderiam ser quaisquer outros dados.
-const user = {
-  userName: 'Joana',
-  password: 123456,
-};
+const greetingMessage = (user) => `Hello, ${user}! Que bom ter você de volta`;
+const loginErrorMessage = (user) => `Pessoa usuária ${user} não encontrada, tente novamente!`;
+
+// const user = {
+//   userName: 'Joana',
+//   password: 123456,
+// };
+
 const verifyCredentials = (userInfo) => {
-  const userName = userInfo.userName;
-  const password = userInfo.password;
-  if (password === 123456 && userName === 'Joana') {
-    return greetingMessage(userName);
-  } else {
-    return loginErrorMessage(userName);
+  const uName = userInfo.userName;
+  const pwd = userInfo.password;
+  if (pwd === 123456 && uName === 'Joana') {
+    return greetingMessage(uName);
   }
+  return loginErrorMessage(uName);
 };
 module.exports = { greetingMessage, loginErrorMessage, verifyCredentials };
