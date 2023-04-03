@@ -11,15 +11,11 @@ const checkAge = (name, age) => {
 };
 
 const studentRegister = (name, age) => {
-  try {
-    checkInfo(name, age);
-    checkAge(name, age);
-    return `${name}, seja bem-vindo(a) à AuTrybe!`;
-  } catch (erro) {
-    return erro.message;
-  }
+  checkInfo(name, age);
+  checkAge(name, age);
+  return `${name}, seja bem-vindo(a) à AuTrybe!`;
 };
-
-studentRegister('Tristan', 32);
-studentRegister('Gavi', 17);
-studentRegister('Andrew',);
+console.log(studentRegister('Gavi', 17));
+// studentRegister('Tristan', 32);
+// studentRegister('Gavi', 17);
+// studentRegister('Andrew',);
