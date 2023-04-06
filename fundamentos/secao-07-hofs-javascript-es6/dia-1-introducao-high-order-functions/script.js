@@ -1,12 +1,15 @@
-const people = [
-  { name: 'Mateus', age: 18 },
-  { name: 'José', age: 16 },
-  { name: 'Ana', age: 23 },
-  { name: 'Cláudia', age: 20 },
-  { name: 'Bruna', age: 19 },
-];
+const genEmail = (employeeFullName) => {
+  const joinName = employeeFullName.toLowerCase().replace(' ', '_');
+  return `${joinName}@trybe.com`;
+};
 
-const verifyAges = (arr, overAge) => arr.every((person) => person.age > overAge);
+const newEmployees = (genEmail) => {
+  const employees = {
+    id1: genEmail('Pedro Guerra'), // Nome: Pedro Guerra -> Chame sua função passando o nome Pedro Guerra como parâmetro, substituindo as aspas
+    id2: genEmail('Luiza Drumond'), // Nome: Luiza Drumond -> Chame sua função passando o nome Luiza Drumond como parâmetro, substituindo as aspas
+    id3: genEmail('Carla Paiva'), // Nome: Carla Paiva -> Chame sua função passando o nome Carla Paiva como parâmetro, substituindo as aspas
+  }
+  return employees;
+};
 
-console.log(verifyAges(people, 18));
-console.log(verifyAges(people, 16));
+console.log(newEmployees(genEmail));
