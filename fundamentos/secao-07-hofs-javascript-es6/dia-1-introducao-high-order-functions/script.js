@@ -1,3 +1,5 @@
+// Gerador de Email
+
 const genEmail = (employeeFullName) => {
   const joinName = employeeFullName.toLowerCase().replace(' ', '_');
   return `${joinName}@trybe.com`;
@@ -12,4 +14,17 @@ const newEmployees = (genEmail) => {
   return employees;
 };
 
-console.log(newEmployees(genEmail));
+// Sorteador de numero
+
+const tryYourLuck = (number) => {
+  const rdmNmb = Math.floor(Math.random() * (5 - 1 + 1) + 1);
+  if (typeof number === 'number' && number <= 5 && number > 0) { 
+    return number === rdmNmb ? 'Parabéns, você ganhou!' : 'Tente novamente!';
+  } 
+  return 'Digite um número entre 1 e 5';
+};
+
+// Corretor automatico de exame
+
+
+console.log(points);
