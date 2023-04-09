@@ -1,0 +1,86 @@
+/*
+ * @see http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * apply a natural box layout model to all elements, but allowing components to change
+ */
+ html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  font-size: 30px;
+  margin: 8%;
+  text-align: justify;
+}
+article {
+  font-size: 28px;
+}
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-size: 30px;
+}
+img {
+	max-width: 100%;
+  margin: 50px 0 0 0;
+}
+/* main {
+}
+section {
+} */
+figure {
+	margin: 0;
+}
+figcaption {
+  font-size: .8em;
+}
+/* Altere a cor de fundo (isso vai te ajudar a perceber quando a media query teve efeito);
+
+Ajuste o tamanho da fonte;
+
+Ajuste as margens da página;
+
+Faça as imagens serem mostradas em duas colunas. */
+@media (min-width: 768px) {
+  body {
+    background-color: rgb(188, 188, 188);
+    font-size: 25px;
+    margin: 3%;
+  }
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  figure {
+    width: 50%;
+  }
+ 
+}
+
+/* Altere a cor de fundo;
+
+Ajuste o tamanho da fonte;
+
+Ajuste as margens da página;
+
+Adicione a propriedade max-width à página, para garantir que a largura das linhas não fique muito grande. */
+@media (min-width: 992px) {
+  body {
+    background-color: rgb(84, 84, 84);
+    font-size: xx-large;
+    margin: auto 10%;
+    max-width: 1100px;
+  }
+
+  h1 {
+    font-size: 70px;
+  }
+
+  h2 {
+    font-size: 50px;
+  }
+}
