@@ -1,22 +1,20 @@
-const user = {
-  name: 'Maria',
-  age: 21,
-  nationality: 'Brazilian',
-};
+// Exercicio 1
 
-const jobInfos = {
-  profession: 'Software engineer',
-  squad: 'Rocket Landing Logic',
-  squadInitials: 'RLL',
-};
+const rectangleArea = (width, height) => width * height;
 
-const userJobInfos = {
-  ...user,
-  ...jobInfos,
-};
+const rectangle1 = [1, 2];
+const rectangle2 = [3, 5];
+const rectangle3 = [6, 9];
+const rectangles = [rectangle1, rectangle2, rectangle3];
 
-const userDescription = ({ name, age, nationality, profession, squadInitials, squad, }) => {
-  return `Hi, my name is ${name}, I'm ${age} years old and I'm ${nationality}. I work as a ${profession} and my squad is ${squadInitials}-${squad}.`
-};
+rectangles.forEach((rectangle) => {
+  console.log(rectangleArea(...rectangle)); // Altere o parâmetro recebido por rectangleArea()
+});
 
-console.log(userDescription(userJobInfos));
+// Exercicio 2
+
+const sum = (...arr) => arr.reduce((acc, crr) => acc + crr, 0);
+
+console.log(sum(4, 5, 6));
+
+// Exercicio 3
