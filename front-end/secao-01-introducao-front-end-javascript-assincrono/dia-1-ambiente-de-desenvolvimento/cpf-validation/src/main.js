@@ -1,4 +1,5 @@
 import validator from 'validator';
+import './src/style.css';
 
 const textInput = document.querySelector('#camp');
 const selector = document.querySelector('#type');
@@ -15,6 +16,5 @@ validateBtn.addEventListener('click', (event) => {
     phoneNumber: validator.isMobilePhone(textInput.value, 'pt-BR'),
     url: validator.isURL(textInput.value),
   };
-  
-  resultOutput.innerHTML = `Your input validation is ${camps[selector.value]}`
+  resultOutput.innerHTML = `Your input validation is ${camps[selector.value]}`;
 });
