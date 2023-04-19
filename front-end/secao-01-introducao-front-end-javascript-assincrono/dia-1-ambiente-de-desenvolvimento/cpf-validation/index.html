@@ -9,23 +9,24 @@
 </head>
 
 <body>
-  <h1>Camp Validation</h1>
-  <form action="" method="get">
-    <label for="">
-      <input type="text">
-    </label>
-    <label for="">
-      <label for="cars">Choose a car:</label>
-
-      <select name="cars" id="cars">
-        <option value="volvo">Volvo</option>
-        <option value="saab">Saab</option>
-        <option value="mercedes">Mercedes</option>
-        <option value="audi">Audi</option>
+  <div id="main-container">
+    <h1 id="main-title">Camp Validation</h1>
+    <form action="" method="get">
+      <label for="camp-input">
+        <input type="text" id="camp-input" placeholder="Text here" maxlength="100">
+      </label>
+      <label for="type-input"></label>
+      <select name="input-type" id="type-input">
+        <option value="cpf">CPF</option>
+        <option value="email">Email</option>
+        <option value="birthDate">Birth date</option>
+        <option value="phoneNumber">Phone Number</option>
+        <option value="url">URL</option>
       </select>
-    </label>
-
-  </form>
+      <button id="validate-button" type="submit">Validate</button>
+    </form>
+    <p id="result-output">Type your information, select the option and validate.</p>
+  </div>
   <script src=".src/main.js" type="module"></script>
 </body>
 
