@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/style.css">
+  <title>Camp Validation</title>
+</head>
+
+<body>
+  <div id="main-container">
+    <h1 id="main-title">Camp Validation</h1>
+    <form action="" method="get">
+      <input type="text" id="camp" placeholder="Text here" maxlength="100">
+      <select name="input-type" id="type">
+        <option value="cpf">CPF</option>
+        <option value="email">Email</option>
+        <option value="birthDate">Birth date</option>
+        <option value="phoneNumber">Phone Number</option>
+        <option value="url">URL</option>
+      </select>
+      <button id="button">Validate</button>
+    </form>
+    <p id="output">Type your information, select the option and validate.</p>
+  </div>
+  <script src="./src/main.js" type="module"></script>
+</body>
+
+</html>

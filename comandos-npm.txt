@@ -14,3 +14,5 @@ npm run test:coverage
 npm run dev
 
 npx vite --open
+
+"test": "NODE_OPTIONS=--experimental-vm-modules NODE_NO_WARNINGS=1 jest --watchAll",
