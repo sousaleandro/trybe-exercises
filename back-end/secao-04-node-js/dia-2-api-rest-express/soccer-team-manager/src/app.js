@@ -46,7 +46,7 @@ app.put('/teams/:id', (req, res) => {
 app.get('/teams/:id', (req, res) => {
   const { id } = req.params;
 
-  const team = teams.find((team) => team.id === Number(id));
+  const team = teams.find((currTeam) => currTeam.id === Number(id));
 
   if (!team) {
     return res.status(404).json({ message: 'Team not found' });
